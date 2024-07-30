@@ -1,0 +1,78 @@
+
+.portfolio-content {
+    height: 1000px;
+    position: relative;
+    margin-left: -10px;
+    .grid-item {
+        padding: 10px;
+        width: 32%;
+        float: left;
+    }
+}
+
+.portfolio-box-01 {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 5px;
+    .link-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    img {
+        width: 100%;
+        transform: scale(1);
+        object-fit: cover;
+        transition: ease all 0.35s;
+    }
+    .portfolio-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(9, 10, 12, 0.5);
+        transition: ease all 0.35s;
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        h5 {
+            color: #ffffff;
+            font-size: 25px;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0 0 10px;
+            position: relative;
+            transition: ease all 0.35s;
+            left: -25px;
+        }
+        span {
+            color: rgba(255, 255, 255, 0.8);
+            font-weight: 500;
+            padding: 2px 12px;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 14px;
+            transition: ease all 0.35s;
+            position: relative;
+            left: -25px;
+        }
+    }
+    &:hover {
+        .portfolio-info {
+            opacity: 1;
+            h5,
+            span {
+                left: 0;
+            }
+        }
+        img {
+            transform: scale(1.1);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+
+.testimonial-col-01 {
+    background: #ffffff;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    border: 1px solid #edd;
+    .img {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        border-radius: 50% 0 50% 50%;
+    }
+    p {
+        padding-left: 0;
+    }
+}
